@@ -1,5 +1,4 @@
-dev.hcl
-prod.hcl
-staging.hcl
-variables.tf
-terraform.auto.tfvars
+!dev.hcl
+!prod.hcl
+!staging.hcl
+
