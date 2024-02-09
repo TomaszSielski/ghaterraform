@@ -1,0 +1,25 @@
+name: "${{ var.ORGANIZATION  }}.app"
+env:
+  DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/${{  var.ORGANIZATION }}"
+  
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "app/**"
+      - "!**/README.md"
+  pull_request:
+    branches:
+      - min
+    paths:
+      - "app/**"
+      - "!**/README.md"
+
+# Job declaration starts.
+jobs:
+  docker:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Checkouut code
+        uses: action@checkout@v3
