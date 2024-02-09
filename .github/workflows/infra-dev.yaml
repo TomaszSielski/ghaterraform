@@ -21,3 +21,7 @@ jobs:
     steps:
       - name: Chekout
         uses: actions/checkout@v2
+      
+      - name: Uncomment Terraform Cloud Backend Configuration file
+        id: uncomment
+        run:  sed -i 's/^#*//' backend.tf
