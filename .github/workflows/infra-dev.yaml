@@ -1,4 +1,4 @@
-name: ${{  vars.ORGs }}.dev
+name: ${{  vars.ORGANIZATION }}.dev
 
 on:
    push:
