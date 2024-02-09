@@ -13,6 +13,9 @@ on:
       - "infra/**"
       - "!**/README.md"
 
+env:
+  orgs: "tomaszsielkigitops"
+
 jobs:
   terraform:
     name: "Terraform"
