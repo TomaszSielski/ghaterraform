@@ -1,4 +1,4 @@
-name: "${{ vars.ORGANIZATION  }}.app"
+name: Application
 env:
   DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/${{  vars.ORGANIZATION }}"
   DOCKERFILE_PATH: app
