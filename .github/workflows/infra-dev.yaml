@@ -20,7 +20,7 @@ jobs:
         working-directory:  "infra"
     steps:
       - name: Chekout
-        uses: action/checkout@v3
+        uses: action/checkout@v2
 
       - name: Uncomment Terraform Cloud Backend Configuration file
         id: uncomment
