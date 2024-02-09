@@ -1,6 +1,4 @@
-name: ${{  vars.ORGANIZATION }}.staging"
-#"${{ vars.ORGANIZATION  }}.staging.infra"
-
+name: ${{  vars.ORGS }}.staging"
 on:
   push:
     branches:

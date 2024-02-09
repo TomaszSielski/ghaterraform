@@ -1,6 +1,6 @@
 workspaces  {   name = "Staging_IaaS" }
 hostname    =   "app.terraform.io"
-organization    =   "${{ vars.ORGANIZATION }}"
+organization    =   ${{ vars.ORGANIZATION }}
 
 
 
