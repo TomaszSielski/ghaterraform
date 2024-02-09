@@ -14,13 +14,13 @@ on:
       - "infra/**"
       - "!**/README.md"
 
-  jobs:
-    terraform:
-      name: "Terraform"
-      runs-on:  ubuntu-latest
-      defaults:
-        run:
-          working-directory:  "infra"
-      steps:
-        name: Chekout
-        uses: action/checkout@v3
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on:  ubuntu-latest
+    defaults:
+      run:
+        working-directory:  "infra"
+    steps:
+      name: Chekout
+      uses: action/checkout@v3
