@@ -1,4 +1,4 @@
-name: "$orgs.dev"
+name: $orgs+".dev"
 
 on:
    push:
