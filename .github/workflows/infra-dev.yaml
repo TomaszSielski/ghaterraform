@@ -1,1 +1,9 @@
 name: "${{  vars.ORGANIZATION }}.dev"
+
+on:
+   push:
+     branches:
+       - main
+     paths:
+       - "infra/**"
+       - "!**/README.md"
