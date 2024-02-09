@@ -2,3 +2,8 @@
 !prod.hcl
 !staging.hcl
 
+**.pem
+# Terrraform's local directories
+**/terrraform/*
+**/target/*
+
