@@ -22,5 +22,5 @@ jobs:
       run:
         working-directory:  "infra"
     steps:
-      name: Chekout
-      uses: action/checkout@v3
+      - name: Chekout
+        uses: action/checkout@v3
