@@ -1,8 +1,8 @@
-name: "${{ var.ORGANIZATION  }}.app"
+name: "${{ vars.ORGANIZATION  }}.app"
 env:
-  DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/${{  var.ORGANIZATION }}"
+  DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/${{  vars.ORGANIZATION }}"
   DOCKERFILE_PATH: app
-  
+
 on:
   push:
     branches:
