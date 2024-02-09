@@ -1,4 +1,4 @@
-name: ${{ env.orgs }}.dev
+name: "${{ env.orgs }}.dev"
 
 on:
    push:
