@@ -1,4 +1,4 @@
-name: $orgs+".dev"
+name: Developement
 
 on:
    push:
