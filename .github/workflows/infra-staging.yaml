@@ -1,4 +1,5 @@
-name: "${{ vars.ORGANIZATION  }}.staging.infra"
+name: "${{  vars.ORGANIZATION}}"
+#"${{ vars.ORGANIZATION  }}.staging.infra"
 
 on:
   push:
