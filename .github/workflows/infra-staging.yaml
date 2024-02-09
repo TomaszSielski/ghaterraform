@@ -1,4 +1,4 @@
-name: "${{  vars.ORGANIZATION}}"
+name: ${{  vars.ORGANIZATION}}
 #"${{ vars.ORGANIZATION  }}.staging.infra"
 
 on:
