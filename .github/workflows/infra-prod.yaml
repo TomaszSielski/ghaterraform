@@ -1,4 +1,4 @@
-name: ${{  vars.ORGANIZATION }}.prod
+name: ${{  vars.ORGANIZATION }}
 
 on:
   push:
