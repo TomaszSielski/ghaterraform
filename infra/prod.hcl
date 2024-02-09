@@ -1,3 +1,3 @@
 workspaces  {   name    =  "Prod_IaaS" }
 hostname    =   "app.terraform.io"
-organization    =   "${{    var.organization    }}'
+organization    =   "${{    vars.ORGANIZATIONS  }}'
