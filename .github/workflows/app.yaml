@@ -1,7 +1,8 @@
-name: Application
+name: ${{ secrets.ORGS}}
+#Application
 env:
-  orgs: "firma"
-  DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/$env.orgs"
+  #orgs: "firma"
+  DOCKERHUB_TAG: "${{ secrets.DOCKERHUB_USERNAME  }}/${{ secrets.ORGS  }}"
   DOCKERFILE_PATH: app
 
 on:
