@@ -32,8 +32,6 @@ jobs:
             hostname     = "app.terraform.io" 
             organization = "${{vars.ORGANIZATION}}"
 
-        run:
-
       - name: Uncomment Terraform Cloud Backend Configuration file
         id: uncomment
         run:  sed -i 's/^#*//' backend.tf
