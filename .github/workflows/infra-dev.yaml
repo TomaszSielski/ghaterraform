@@ -49,5 +49,11 @@ jobs:
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
+      
+      - name: Terraform Plan
+        id: plan
+        if: github.event_name == 'pull_request'
+        run:  terraform plan -no-color
+        continue-on-error:  true
 
         
