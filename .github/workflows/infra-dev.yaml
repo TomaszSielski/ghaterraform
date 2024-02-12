@@ -22,6 +22,18 @@ jobs:
       - name: Chekout
         uses: actions/checkout@v3
 
+      - name: Create hcl file
+        uses: iarp/create-a-file-action@0.3
+        with:
+          path: 'infra'
+          file: 'dev.hcl'
+          content:  |
+            workspaces { name = "dev_IaaS" } 
+            hostname     = "app.terraform.io" 
+            organization = "${{vars.ORGANIZATION}}"
+
+        run:
+
       - name: Uncomment Terraform Cloud Backend Configuration file
         id: uncomment
         run:  sed -i 's/^#*//' backend.tf
