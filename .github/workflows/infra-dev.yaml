@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Create hcl file
-        uses: iarp/create-a-file-action@0.3
+        uses: 1arp/create-a-file-action@0.3
         with:
           path: 'infra'
           file: 'dev.hcl'
